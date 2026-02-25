@@ -1,0 +1,10 @@
+pandas
+openpyxl
+numpy
+faiss-cpu
+sentence-transformers
+openai
+python-dotenv
+requests
+tqdm
+regex

@@ -1,0 +1,8 @@
+data/jharkhand_fir.xlsx
+vector_store/fir.index
+vector_store/metadata.pkl
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+.env
