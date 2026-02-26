@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ## Data Format
 
 - Excel file path: `data/jharkhand_fir.xlsx`
-- Active sheet: `2025`
+- Active sheet: value from `DATA_SHEET` in `app/config.py`
 - Header row: Excel row 2
 - Data rows start from Excel row 3
 
@@ -74,6 +74,61 @@ Ask question: Battery चोरी से संबंधित FIR दिखा
 
 5. Exit interactive mode:
 - Type `exit` or `quit`
+
+## Deduplication Checks
+
+Run dataset-level duplicate check (by generated `case_id`):
+
+```bash
+python3 -m app.dedup_check
+```
+
+Run automated dedup tests:
+
+```bash
+pip install -r requirements.txt
+python3 -m pytest -q tests/test_deduplication.py
+```
+
+## RAG Testing Pipeline
+
+Hindi-heavy question-bank and validation scripts are available in `tests/rag/`.
+
+Generate 100+ question template (structural first, then semantic):
+
+```bash
+python3 tests/rag/build_question_bank.py
+```
+
+Run retrieval evaluation:
+
+```bash
+python3 tests/rag/run_rag_eval.py --k 10
+```
+
+Validate IPC/BNS tagging against metadata sections:
+
+```bash
+python3 tests/rag/validate_ipc_tagging.py
+```
+
+Build IPC reference dictionary from official Hindi IPC PDF:
+
+```bash
+python3 tests/rag/build_ipc_reference.py --ipc-pdf tests/rag/references/IPC_hindi.pdf
+```
+
+Then rebuild vector metadata to persist case-level IPC tags:
+
+```bash
+python3 -m app.embed_store
+```
+
+Optional: validate tagged IPC sections against IPC PDF in one step:
+
+```bash
+python3 tests/rag/validate_ipc_tagging.py --ipc-pdf /path/to/ipc_reference.pdf --auto-build-reference
+```
 
 ## LLM Backend
 

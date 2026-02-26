@@ -8,7 +8,17 @@ except ImportError:
     from llm import ask_ollama
 
 def ask_question(query):
-    contexts = retrieve(query, k=5)
+    contexts = retrieve(query, k=50)
+    if not contexts:
+        return "No matching FIR context found."
+
+    context_text = "\n".join(
+        [
+            f"CaseID: {item.get('case_id', 'NA')} | FIR: {item.get('fir_srno', 'NA')} | "
+            f"PS: {item.get('ps', 'NA')}\n{item.get('text', '')}"
+            for item in contexts
+        ]
+    )
 
     final_prompt = f"""
 You are an assistant analysing FIR records of Jharkhand Police.
@@ -16,7 +26,7 @@ You are an assistant analysing FIR records of Jharkhand Police.
 Use only the provided context to answer.
 
 Context:
-{chr(10).join(contexts)}
+{context_text}
 
 Question:
 {query}
@@ -39,6 +49,5 @@ if __name__ == "__main__":
             print("Please enter a question, or type 'exit' to quit.")
             continue
         print(ask_question(query))
-
 
 

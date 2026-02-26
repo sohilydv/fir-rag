@@ -1,0 +1,75 @@
+{
+  "total_cases": 5733,
+  "ipc_detection": {
+    "tp": 4834,
+    "fp": 0,
+    "fn": 0,
+    "tn": 899,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "bns_detection": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "tn": 5733,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "shortform_coverage": {
+    "ipc": {
+      "total_with_shortform": 4834,
+      "tagged": 4834,
+      "coverage": 1.0
+    },
+    "bns": {
+      "total_with_shortform": 0,
+      "tagged": 0,
+      "coverage": 0.0
+    }
+  },
+  "top_act_tags": [
+    [
+      "IPC_1860",
+      4834
+    ],
+    [
+      "ELECTRICITY_ACT_2003",
+      822
+    ],
+    [
+      "MMDR_ACT_1957",
+      385
+    ],
+    [
+      "DOWRY_PROHIBITION_ACT_1961",
+      181
+    ],
+    [
+      "ARMS_ACT_1959",
+      147
+    ],
+    [
+      "POCSO_2012",
+      143
+    ],
+    [
+      "SCST_ACT_1989",
+      48
+    ],
+    [
+      "PCA_1960",
+      22
+    ]
+  ],
+  "ipc_reference_validation": {
+    "reference_enabled": false,
+    "reference_section_count": 0,
+    "ipc_sections_raw_count": 230,
+    "ipc_sections_validated_count": 230,
+    "ipc_sections_dropped_by_reference_count": 0,
+    "dropped_sections_sample": []
+  }
+}
