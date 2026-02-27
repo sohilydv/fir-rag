@@ -72,6 +72,18 @@ python3 app/main.py
 Ask question: Battery चोरी से संबंधित FIR दिखाओ
 ```
 
+For IPC/BNS act-section prediction with binary accuracy (`1`/`0`) against retrieved metadata:
+
+```text
+Ask question: Act section for FIR content: <paste FIR content here>
+```
+
+The response includes:
+- Predicted act section
+- Expected act section from metadata
+- Matched case ID used for evaluation
+- Accuracy (`1` if exact match, else `0`)
+
 5. Exit interactive mode:
 - Type `exit` or `quit`
 

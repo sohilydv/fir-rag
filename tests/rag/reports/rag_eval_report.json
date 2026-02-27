@@ -1,0 +1,1509 @@
+{
+  "summary": {
+    "total_questions": 120,
+    "passed": 34,
+    "accuracy": 0.2833333333333333,
+    "by_type": {
+      "structural": {
+        "total": 70,
+        "passed": 0,
+        "accuracy": 0.0
+      },
+      "semantic": {
+        "total": 50,
+        "passed": 34,
+        "accuracy": 0.68
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "S001",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "केस आईडी e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa में जांच अधिकारी (IO) कौन है?",
+      "expected": {
+        "case_id": "e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S002",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "थाना कतरास, FIR नंबर 130, वर्ष 2023 वाले केस में IO कौन है?",
+      "expected": {
+        "ps": "कतरास",
+        "fir_number": "130",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "b32530c7ebbfc0d7c5da5c3bc9c2d3688101f80b",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S003",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "केस आईडी e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa में शिकायतकर्ता (Complainant) का नाम क्या है?",
+      "expected": {
+        "case_id": "e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S004",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "थाना कतरास के FIR नंबर 130 (वर्ष 2023) में शिकायतकर्ता कौन है?",
+      "expected": {
+        "ps": "कतरास",
+        "fir_number": "130",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "f21016de1679a04436fe6be4ba0a35b008b7e2e5",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S005",
+      "type": "structural",
+      "intent": "accused_lookup",
+      "question": "केस आईडी e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa में आरोपी कौन-कौन हैं?",
+      "expected": {
+        "case_id": "e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S006",
+      "type": "structural",
+      "intent": "date_lookup",
+      "question": "केस आईडी e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa की घटना/रजिस्ट्रेशन तिथि क्या है?",
+      "expected": {
+        "case_id": "e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S007",
+      "type": "structural",
+      "intent": "sections_lookup",
+      "question": "थाना कतरास के FIR नंबर 130, वर्ष 2023 में कौन-कौन सी धाराएं लगी हैं?",
+      "expected": {
+        "ps": "कतरास",
+        "fir_number": "130",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "d1bdc62f1bf1955bce5ab4cf86988938be33535a",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S008",
+      "type": "structural",
+      "intent": "location_lookup",
+      "question": "केस आईडी e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa किस थाना और जिले से संबंधित है?",
+      "expected": {
+        "case_id": "e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S009",
+      "type": "structural",
+      "intent": "fir_content_lookup",
+      "question": "केस आईडी e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa में FIR का मुख्य विवरण (FIR Content) क्या है?",
+      "expected": {
+        "case_id": "e65b0890ded7a777c7c0ff5d471eb6c68a8daeaa"
+      },
+      "passed": false,
+      "top_hit_case_id": "8771b4ecfb1a0494b75291cdfb328a488aacfa3c",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S010",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "केस आईडी 168b05ad0318718cc2f9630e2440734e41054388 में जांच अधिकारी (IO) कौन है?",
+      "expected": {
+        "case_id": "168b05ad0318718cc2f9630e2440734e41054388"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S011",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "थाना झारिया, FIR नंबर 104, वर्ष 2023 वाले केस में IO कौन है?",
+      "expected": {
+        "ps": "झारिया",
+        "fir_number": "104",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "6049d3fb59a78ade3cedf09d6da34543fe5e6cf2",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S012",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "केस आईडी 168b05ad0318718cc2f9630e2440734e41054388 में शिकायतकर्ता (Complainant) का नाम क्या है?",
+      "expected": {
+        "case_id": "168b05ad0318718cc2f9630e2440734e41054388"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S013",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "थाना झारिया के FIR नंबर 104 (वर्ष 2023) में शिकायतकर्ता कौन है?",
+      "expected": {
+        "ps": "झारिया",
+        "fir_number": "104",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "f1717a069b854027146b41ded08acc7962c8352c",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S014",
+      "type": "structural",
+      "intent": "accused_lookup",
+      "question": "केस आईडी 168b05ad0318718cc2f9630e2440734e41054388 में आरोपी कौन-कौन हैं?",
+      "expected": {
+        "case_id": "168b05ad0318718cc2f9630e2440734e41054388"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S015",
+      "type": "structural",
+      "intent": "date_lookup",
+      "question": "केस आईडी 168b05ad0318718cc2f9630e2440734e41054388 की घटना/रजिस्ट्रेशन तिथि क्या है?",
+      "expected": {
+        "case_id": "168b05ad0318718cc2f9630e2440734e41054388"
+      },
+      "passed": false,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S016",
+      "type": "structural",
+      "intent": "sections_lookup",
+      "question": "थाना झारिया के FIR नंबर 104, वर्ष 2023 में कौन-कौन सी धाराएं लगी हैं?",
+      "expected": {
+        "ps": "झारिया",
+        "fir_number": "104",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "e021a1966e4b085af219274819a8367a9e4e6822",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S017",
+      "type": "structural",
+      "intent": "location_lookup",
+      "question": "केस आईडी 168b05ad0318718cc2f9630e2440734e41054388 किस थाना और जिले से संबंधित है?",
+      "expected": {
+        "case_id": "168b05ad0318718cc2f9630e2440734e41054388"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S018",
+      "type": "structural",
+      "intent": "fir_content_lookup",
+      "question": "केस आईडी 168b05ad0318718cc2f9630e2440734e41054388 में FIR का मुख्य विवरण (FIR Content) क्या है?",
+      "expected": {
+        "case_id": "168b05ad0318718cc2f9630e2440734e41054388"
+      },
+      "passed": false,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S019",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "केस आईडी 8e08e63158c7ab1a4c5f9e86daa30e85582eb94e में जांच अधिकारी (IO) कौन है?",
+      "expected": {
+        "case_id": "8e08e63158c7ab1a4c5f9e86daa30e85582eb94e"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S020",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "थाना चीरकुन्डा, FIR नंबर 219, वर्ष 2023 वाले केस में IO कौन है?",
+      "expected": {
+        "ps": "चीरकुन्डा",
+        "fir_number": "219",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "b32530c7ebbfc0d7c5da5c3bc9c2d3688101f80b",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S021",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "केस आईडी 8e08e63158c7ab1a4c5f9e86daa30e85582eb94e में शिकायतकर्ता (Complainant) का नाम क्या है?",
+      "expected": {
+        "case_id": "8e08e63158c7ab1a4c5f9e86daa30e85582eb94e"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S022",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "थाना चीरकुन्डा के FIR नंबर 219 (वर्ष 2023) में शिकायतकर्ता कौन है?",
+      "expected": {
+        "ps": "चीरकुन्डा",
+        "fir_number": "219",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "f21016de1679a04436fe6be4ba0a35b008b7e2e5",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S023",
+      "type": "structural",
+      "intent": "accused_lookup",
+      "question": "केस आईडी 8e08e63158c7ab1a4c5f9e86daa30e85582eb94e में आरोपी कौन-कौन हैं?",
+      "expected": {
+        "case_id": "8e08e63158c7ab1a4c5f9e86daa30e85582eb94e"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S024",
+      "type": "structural",
+      "intent": "date_lookup",
+      "question": "केस आईडी 8e08e63158c7ab1a4c5f9e86daa30e85582eb94e की घटना/रजिस्ट्रेशन तिथि क्या है?",
+      "expected": {
+        "case_id": "8e08e63158c7ab1a4c5f9e86daa30e85582eb94e"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S025",
+      "type": "structural",
+      "intent": "sections_lookup",
+      "question": "थाना चीरकुन्डा के FIR नंबर 219, वर्ष 2023 में कौन-कौन सी धाराएं लगी हैं?",
+      "expected": {
+        "ps": "चीरकुन्डा",
+        "fir_number": "219",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "d1bdc62f1bf1955bce5ab4cf86988938be33535a",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S026",
+      "type": "structural",
+      "intent": "location_lookup",
+      "question": "केस आईडी 8e08e63158c7ab1a4c5f9e86daa30e85582eb94e किस थाना और जिले से संबंधित है?",
+      "expected": {
+        "case_id": "8e08e63158c7ab1a4c5f9e86daa30e85582eb94e"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S027",
+      "type": "structural",
+      "intent": "fir_content_lookup",
+      "question": "केस आईडी 8e08e63158c7ab1a4c5f9e86daa30e85582eb94e में FIR का मुख्य विवरण (FIR Content) क्या है?",
+      "expected": {
+        "case_id": "8e08e63158c7ab1a4c5f9e86daa30e85582eb94e"
+      },
+      "passed": false,
+      "top_hit_case_id": "338295d36c8e81bf82d06431464a833d925f930f",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S028",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "केस आईडी f3c3178730e17b83954ed29175bf8809c2abc97b में जांच अधिकारी (IO) कौन है?",
+      "expected": {
+        "case_id": "f3c3178730e17b83954ed29175bf8809c2abc97b"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S029",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "थाना केन्दुआडीह, FIR नंबर 22, वर्ष 2023 वाले केस में IO कौन है?",
+      "expected": {
+        "ps": "केन्दुआडीह",
+        "fir_number": "22",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "b32530c7ebbfc0d7c5da5c3bc9c2d3688101f80b",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S030",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "केस आईडी f3c3178730e17b83954ed29175bf8809c2abc97b में शिकायतकर्ता (Complainant) का नाम क्या है?",
+      "expected": {
+        "case_id": "f3c3178730e17b83954ed29175bf8809c2abc97b"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S031",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "थाना केन्दुआडीह के FIR नंबर 22 (वर्ष 2023) में शिकायतकर्ता कौन है?",
+      "expected": {
+        "ps": "केन्दुआडीह",
+        "fir_number": "22",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "de148db7ce89563a359c0993096186534d3aaacc",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S032",
+      "type": "structural",
+      "intent": "accused_lookup",
+      "question": "केस आईडी f3c3178730e17b83954ed29175bf8809c2abc97b में आरोपी कौन-कौन हैं?",
+      "expected": {
+        "case_id": "f3c3178730e17b83954ed29175bf8809c2abc97b"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S033",
+      "type": "structural",
+      "intent": "date_lookup",
+      "question": "केस आईडी f3c3178730e17b83954ed29175bf8809c2abc97b की घटना/रजिस्ट्रेशन तिथि क्या है?",
+      "expected": {
+        "case_id": "f3c3178730e17b83954ed29175bf8809c2abc97b"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S034",
+      "type": "structural",
+      "intent": "sections_lookup",
+      "question": "थाना केन्दुआडीह के FIR नंबर 22, वर्ष 2023 में कौन-कौन सी धाराएं लगी हैं?",
+      "expected": {
+        "ps": "केन्दुआडीह",
+        "fir_number": "22",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "08f5bdfd19c3577e5e007e52b76bc22c1e96c5b5",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S035",
+      "type": "structural",
+      "intent": "location_lookup",
+      "question": "केस आईडी f3c3178730e17b83954ed29175bf8809c2abc97b किस थाना और जिले से संबंधित है?",
+      "expected": {
+        "case_id": "f3c3178730e17b83954ed29175bf8809c2abc97b"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S036",
+      "type": "structural",
+      "intent": "fir_content_lookup",
+      "question": "केस आईडी f3c3178730e17b83954ed29175bf8809c2abc97b में FIR का मुख्य विवरण (FIR Content) क्या है?",
+      "expected": {
+        "case_id": "f3c3178730e17b83954ed29175bf8809c2abc97b"
+      },
+      "passed": false,
+      "top_hit_case_id": "338295d36c8e81bf82d06431464a833d925f930f",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S037",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "केस आईडी 8cc5676c25368b4d2e293c7eddbf60b62e8368fb में जांच अधिकारी (IO) कौन है?",
+      "expected": {
+        "case_id": "8cc5676c25368b4d2e293c7eddbf60b62e8368fb"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S038",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "थाना केन्दुआडीह, FIR नंबर 6, वर्ष 2023 वाले केस में IO कौन है?",
+      "expected": {
+        "ps": "केन्दुआडीह",
+        "fir_number": "6",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "b32530c7ebbfc0d7c5da5c3bc9c2d3688101f80b",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S039",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "केस आईडी 8cc5676c25368b4d2e293c7eddbf60b62e8368fb में शिकायतकर्ता (Complainant) का नाम क्या है?",
+      "expected": {
+        "case_id": "8cc5676c25368b4d2e293c7eddbf60b62e8368fb"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S040",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "थाना केन्दुआडीह के FIR नंबर 6 (वर्ष 2023) में शिकायतकर्ता कौन है?",
+      "expected": {
+        "ps": "केन्दुआडीह",
+        "fir_number": "6",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "de148db7ce89563a359c0993096186534d3aaacc",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S041",
+      "type": "structural",
+      "intent": "accused_lookup",
+      "question": "केस आईडी 8cc5676c25368b4d2e293c7eddbf60b62e8368fb में आरोपी कौन-कौन हैं?",
+      "expected": {
+        "case_id": "8cc5676c25368b4d2e293c7eddbf60b62e8368fb"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S042",
+      "type": "structural",
+      "intent": "date_lookup",
+      "question": "केस आईडी 8cc5676c25368b4d2e293c7eddbf60b62e8368fb की घटना/रजिस्ट्रेशन तिथि क्या है?",
+      "expected": {
+        "case_id": "8cc5676c25368b4d2e293c7eddbf60b62e8368fb"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S043",
+      "type": "structural",
+      "intent": "sections_lookup",
+      "question": "थाना केन्दुआडीह के FIR नंबर 6, वर्ष 2023 में कौन-कौन सी धाराएं लगी हैं?",
+      "expected": {
+        "ps": "केन्दुआडीह",
+        "fir_number": "6",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "195a2ed616a6241d30c6d2abb1a63dd91a379e8b",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S044",
+      "type": "structural",
+      "intent": "location_lookup",
+      "question": "केस आईडी 8cc5676c25368b4d2e293c7eddbf60b62e8368fb किस थाना और जिले से संबंधित है?",
+      "expected": {
+        "case_id": "8cc5676c25368b4d2e293c7eddbf60b62e8368fb"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S045",
+      "type": "structural",
+      "intent": "fir_content_lookup",
+      "question": "केस आईडी 8cc5676c25368b4d2e293c7eddbf60b62e8368fb में FIR का मुख्य विवरण (FIR Content) क्या है?",
+      "expected": {
+        "case_id": "8cc5676c25368b4d2e293c7eddbf60b62e8368fb"
+      },
+      "passed": false,
+      "top_hit_case_id": "338295d36c8e81bf82d06431464a833d925f930f",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S046",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "केस आईडी ed587f55ade7b68d5e0f83276f9fd6a598937975 में जांच अधिकारी (IO) कौन है?",
+      "expected": {
+        "case_id": "ed587f55ade7b68d5e0f83276f9fd6a598937975"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S047",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "थाना धनसार, FIR नंबर 52, वर्ष 2023 वाले केस में IO कौन है?",
+      "expected": {
+        "ps": "धनसार",
+        "fir_number": "52",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "b32530c7ebbfc0d7c5da5c3bc9c2d3688101f80b",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S048",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "केस आईडी ed587f55ade7b68d5e0f83276f9fd6a598937975 में शिकायतकर्ता (Complainant) का नाम क्या है?",
+      "expected": {
+        "case_id": "ed587f55ade7b68d5e0f83276f9fd6a598937975"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S049",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "थाना धनसार के FIR नंबर 52 (वर्ष 2023) में शिकायतकर्ता कौन है?",
+      "expected": {
+        "ps": "धनसार",
+        "fir_number": "52",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "9fed0266b522550876583f54bb0f407f7128dcbe",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S050",
+      "type": "structural",
+      "intent": "accused_lookup",
+      "question": "केस आईडी ed587f55ade7b68d5e0f83276f9fd6a598937975 में आरोपी कौन-कौन हैं?",
+      "expected": {
+        "case_id": "ed587f55ade7b68d5e0f83276f9fd6a598937975"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S051",
+      "type": "structural",
+      "intent": "date_lookup",
+      "question": "केस आईडी ed587f55ade7b68d5e0f83276f9fd6a598937975 की घटना/रजिस्ट्रेशन तिथि क्या है?",
+      "expected": {
+        "case_id": "ed587f55ade7b68d5e0f83276f9fd6a598937975"
+      },
+      "passed": false,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S052",
+      "type": "structural",
+      "intent": "sections_lookup",
+      "question": "थाना धनसार के FIR नंबर 52, वर्ष 2023 में कौन-कौन सी धाराएं लगी हैं?",
+      "expected": {
+        "ps": "धनसार",
+        "fir_number": "52",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "f04913067827003b3a08209fb7fa9eb1eb7b7fad",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S053",
+      "type": "structural",
+      "intent": "location_lookup",
+      "question": "केस आईडी ed587f55ade7b68d5e0f83276f9fd6a598937975 किस थाना और जिले से संबंधित है?",
+      "expected": {
+        "case_id": "ed587f55ade7b68d5e0f83276f9fd6a598937975"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S054",
+      "type": "structural",
+      "intent": "fir_content_lookup",
+      "question": "केस आईडी ed587f55ade7b68d5e0f83276f9fd6a598937975 में FIR का मुख्य विवरण (FIR Content) क्या है?",
+      "expected": {
+        "case_id": "ed587f55ade7b68d5e0f83276f9fd6a598937975"
+      },
+      "passed": false,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S055",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "केस आईडी 82f471f6422520a2feaa0001a696983720ef076d में जांच अधिकारी (IO) कौन है?",
+      "expected": {
+        "case_id": "82f471f6422520a2feaa0001a696983720ef076d"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S056",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "थाना जोरापोखर, FIR नंबर 228, वर्ष 2023 वाले केस में IO कौन है?",
+      "expected": {
+        "ps": "जोरापोखर",
+        "fir_number": "228",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "b32530c7ebbfc0d7c5da5c3bc9c2d3688101f80b",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S057",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "केस आईडी 82f471f6422520a2feaa0001a696983720ef076d में शिकायतकर्ता (Complainant) का नाम क्या है?",
+      "expected": {
+        "case_id": "82f471f6422520a2feaa0001a696983720ef076d"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S058",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "थाना जोरापोखर के FIR नंबर 228 (वर्ष 2023) में शिकायतकर्ता कौन है?",
+      "expected": {
+        "ps": "जोरापोखर",
+        "fir_number": "228",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "f21016de1679a04436fe6be4ba0a35b008b7e2e5",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S059",
+      "type": "structural",
+      "intent": "accused_lookup",
+      "question": "केस आईडी 82f471f6422520a2feaa0001a696983720ef076d में आरोपी कौन-कौन हैं?",
+      "expected": {
+        "case_id": "82f471f6422520a2feaa0001a696983720ef076d"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S060",
+      "type": "structural",
+      "intent": "date_lookup",
+      "question": "केस आईडी 82f471f6422520a2feaa0001a696983720ef076d की घटना/रजिस्ट्रेशन तिथि क्या है?",
+      "expected": {
+        "case_id": "82f471f6422520a2feaa0001a696983720ef076d"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S061",
+      "type": "structural",
+      "intent": "sections_lookup",
+      "question": "थाना जोरापोखर के FIR नंबर 228, वर्ष 2023 में कौन-कौन सी धाराएं लगी हैं?",
+      "expected": {
+        "ps": "जोरापोखर",
+        "fir_number": "228",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "003a923bc25f6bac5c2c8abd477df471087e2536",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S062",
+      "type": "structural",
+      "intent": "location_lookup",
+      "question": "केस आईडी 82f471f6422520a2feaa0001a696983720ef076d किस थाना और जिले से संबंधित है?",
+      "expected": {
+        "case_id": "82f471f6422520a2feaa0001a696983720ef076d"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S063",
+      "type": "structural",
+      "intent": "fir_content_lookup",
+      "question": "केस आईडी 82f471f6422520a2feaa0001a696983720ef076d में FIR का मुख्य विवरण (FIR Content) क्या है?",
+      "expected": {
+        "case_id": "82f471f6422520a2feaa0001a696983720ef076d"
+      },
+      "passed": false,
+      "top_hit_case_id": "8771b4ecfb1a0494b75291cdfb328a488aacfa3c",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S064",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "केस आईडी 7063c970ed9c99cb691f015a9e832602dc430fc0 में जांच अधिकारी (IO) कौन है?",
+      "expected": {
+        "case_id": "7063c970ed9c99cb691f015a9e832602dc430fc0"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S065",
+      "type": "structural",
+      "intent": "io_lookup",
+      "question": "थाना तेतुलमारी, FIR नंबर 56, वर्ष 2023 वाले केस में IO कौन है?",
+      "expected": {
+        "ps": "तेतुलमारी",
+        "fir_number": "56",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "b32530c7ebbfc0d7c5da5c3bc9c2d3688101f80b",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S066",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "केस आईडी 7063c970ed9c99cb691f015a9e832602dc430fc0 में शिकायतकर्ता (Complainant) का नाम क्या है?",
+      "expected": {
+        "case_id": "7063c970ed9c99cb691f015a9e832602dc430fc0"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S067",
+      "type": "structural",
+      "intent": "complainant_lookup",
+      "question": "थाना तेतुलमारी के FIR नंबर 56 (वर्ष 2023) में शिकायतकर्ता कौन है?",
+      "expected": {
+        "ps": "तेतुलमारी",
+        "fir_number": "56",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "f21016de1679a04436fe6be4ba0a35b008b7e2e5",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S068",
+      "type": "structural",
+      "intent": "accused_lookup",
+      "question": "केस आईडी 7063c970ed9c99cb691f015a9e832602dc430fc0 में आरोपी कौन-कौन हैं?",
+      "expected": {
+        "case_id": "7063c970ed9c99cb691f015a9e832602dc430fc0"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S069",
+      "type": "structural",
+      "intent": "date_lookup",
+      "question": "केस आईडी 7063c970ed9c99cb691f015a9e832602dc430fc0 की घटना/रजिस्ट्रेशन तिथि क्या है?",
+      "expected": {
+        "case_id": "7063c970ed9c99cb691f015a9e832602dc430fc0"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "S070",
+      "type": "structural",
+      "intent": "sections_lookup",
+      "question": "थाना तेतुलमारी के FIR नंबर 56, वर्ष 2023 में कौन-कौन सी धाराएं लगी हैं?",
+      "expected": {
+        "ps": "तेतुलमारी",
+        "fir_number": "56",
+        "year": "2023"
+      },
+      "passed": false,
+      "top_hit_case_id": "55749dd8e06b5dcee417c955044b7567e0f67436",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M001",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "भारतीय दंड संहिता (IPC 1860) से संबंधित FIR केस दिखाओ।",
+      "expected": {
+        "act_tag": "IPC_1860"
+      },
+      "passed": true,
+      "top_hit_case_id": "e10bb29666f02a1b053971d5cf8a8f7192c9e099",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M002",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "ऐसे मामले बताओ जिनमें भारतीय दंड संहिता (IPC 1860) लागू हुआ है।",
+      "expected": {
+        "act_tag": "IPC_1860"
+      },
+      "passed": true,
+      "top_hit_case_id": "003a923bc25f6bac5c2c8abd477df471087e2536",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M003",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "भारतीय दंड संहिता (IPC 1860) की धाराओं वाले मामलों की सूची दो।",
+      "expected": {
+        "act_tag": "IPC_1860"
+      },
+      "passed": true,
+      "top_hit_case_id": "e10bb29666f02a1b053971d5cf8a8f7192c9e099",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M004",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "विद्युत अधिनियम 2003 से संबंधित FIR केस दिखाओ।",
+      "expected": {
+        "act_tag": "ELECTRICITY_ACT_2003"
+      },
+      "passed": true,
+      "top_hit_case_id": "4c33c86dd85279f5b9e77fcf1f6603f46df41ac1",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M005",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "ऐसे मामले बताओ जिनमें विद्युत अधिनियम 2003 लागू हुआ है।",
+      "expected": {
+        "act_tag": "ELECTRICITY_ACT_2003"
+      },
+      "passed": true,
+      "top_hit_case_id": "003a923bc25f6bac5c2c8abd477df471087e2536",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M006",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "विद्युत अधिनियम 2003 की धाराओं वाले मामलों की सूची दो।",
+      "expected": {
+        "act_tag": "ELECTRICITY_ACT_2003"
+      },
+      "passed": true,
+      "top_hit_case_id": "003a923bc25f6bac5c2c8abd477df471087e2536",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M007",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "खान एवं खनिज अधिनियम 1957 से संबंधित FIR केस दिखाओ।",
+      "expected": {
+        "act_tag": "MMDR_ACT_1957"
+      },
+      "passed": true,
+      "top_hit_case_id": "f04913067827003b3a08209fb7fa9eb1eb7b7fad",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M008",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "ऐसे मामले बताओ जिनमें खान एवं खनिज अधिनियम 1957 लागू हुआ है।",
+      "expected": {
+        "act_tag": "MMDR_ACT_1957"
+      },
+      "passed": true,
+      "top_hit_case_id": "4626a6864ec85a238e70141d4665259df035c70e",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M009",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "खान एवं खनिज अधिनियम 1957 की धाराओं वाले मामलों की सूची दो।",
+      "expected": {
+        "act_tag": "MMDR_ACT_1957"
+      },
+      "passed": true,
+      "top_hit_case_id": "4626a6864ec85a238e70141d4665259df035c70e",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M010",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "दहेज प्रतिषेध अधिनियम 1961 से संबंधित FIR केस दिखाओ।",
+      "expected": {
+        "act_tag": "DOWRY_PROHIBITION_ACT_1961"
+      },
+      "passed": false,
+      "top_hit_case_id": "003a923bc25f6bac5c2c8abd477df471087e2536",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M011",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "ऐसे मामले बताओ जिनमें दहेज प्रतिषेध अधिनियम 1961 लागू हुआ है।",
+      "expected": {
+        "act_tag": "DOWRY_PROHIBITION_ACT_1961"
+      },
+      "passed": true,
+      "top_hit_case_id": "0f920c7a3048b75d0b43151dd072003adffd49be",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M012",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "दहेज प्रतिषेध अधिनियम 1961 की धाराओं वाले मामलों की सूची दो।",
+      "expected": {
+        "act_tag": "DOWRY_PROHIBITION_ACT_1961"
+      },
+      "passed": true,
+      "top_hit_case_id": "0f920c7a3048b75d0b43151dd072003adffd49be",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M013",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "आयुध अधिनियम 1959 से संबंधित FIR केस दिखाओ।",
+      "expected": {
+        "act_tag": "ARMS_ACT_1959"
+      },
+      "passed": true,
+      "top_hit_case_id": "6049d3fb59a78ade3cedf09d6da34543fe5e6cf2",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M014",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "ऐसे मामले बताओ जिनमें आयुध अधिनियम 1959 लागू हुआ है।",
+      "expected": {
+        "act_tag": "ARMS_ACT_1959"
+      },
+      "passed": true,
+      "top_hit_case_id": "0f920c7a3048b75d0b43151dd072003adffd49be",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M015",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "आयुध अधिनियम 1959 की धाराओं वाले मामलों की सूची दो।",
+      "expected": {
+        "act_tag": "ARMS_ACT_1959"
+      },
+      "passed": true,
+      "top_hit_case_id": "0f920c7a3048b75d0b43151dd072003adffd49be",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M016",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "पॉक्सो अधिनियम 2012 से संबंधित FIR केस दिखाओ।",
+      "expected": {
+        "act_tag": "POCSO_2012"
+      },
+      "passed": false,
+      "top_hit_case_id": "de148db7ce89563a359c0993096186534d3aaacc",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M017",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "ऐसे मामले बताओ जिनमें पॉक्सो अधिनियम 2012 लागू हुआ है।",
+      "expected": {
+        "act_tag": "POCSO_2012"
+      },
+      "passed": false,
+      "top_hit_case_id": "003a923bc25f6bac5c2c8abd477df471087e2536",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M018",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "पॉक्सो अधिनियम 2012 की धाराओं वाले मामलों की सूची दो।",
+      "expected": {
+        "act_tag": "POCSO_2012"
+      },
+      "passed": false,
+      "top_hit_case_id": "003a923bc25f6bac5c2c8abd477df471087e2536",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M019",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "SC/ST अत्याचार निवारण अधिनियम 1989 से संबंधित FIR केस दिखाओ।",
+      "expected": {
+        "act_tag": "SCST_ACT_1989"
+      },
+      "passed": false,
+      "top_hit_case_id": "9fed0266b522550876583f54bb0f407f7128dcbe",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M020",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "ऐसे मामले बताओ जिनमें SC/ST अत्याचार निवारण अधिनियम 1989 लागू हुआ है।",
+      "expected": {
+        "act_tag": "SCST_ACT_1989"
+      },
+      "passed": false,
+      "top_hit_case_id": "d7aec050af66a28494362ec9eaa8c69854ad9a2d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M021",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "SC/ST अत्याचार निवारण अधिनियम 1989 की धाराओं वाले मामलों की सूची दो।",
+      "expected": {
+        "act_tag": "SCST_ACT_1989"
+      },
+      "passed": false,
+      "top_hit_case_id": "0f920c7a3048b75d0b43151dd072003adffd49be",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M022",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "पशु क्रूरता निवारण अधिनियम 1960 से संबंधित FIR केस दिखाओ।",
+      "expected": {
+        "act_tag": "PCA_1960"
+      },
+      "passed": true,
+      "top_hit_case_id": "fc0be6c6b8ff1c4c9d3d6e6ee39f8e2788b31570",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M023",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "ऐसे मामले बताओ जिनमें पशु क्रूरता निवारण अधिनियम 1960 लागू हुआ है।",
+      "expected": {
+        "act_tag": "PCA_1960"
+      },
+      "passed": true,
+      "top_hit_case_id": "553648afd59e6ad4a8c190d86b5e8f7f8d791f32",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M024",
+      "type": "semantic",
+      "intent": "act_filter",
+      "question": "पशु क्रूरता निवारण अधिनियम 1960 की धाराओं वाले मामलों की सूची दो।",
+      "expected": {
+        "act_tag": "PCA_1960"
+      },
+      "passed": true,
+      "top_hit_case_id": "553648afd59e6ad4a8c190d86b5e8f7f8d791f32",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M025",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 34 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "34"
+      },
+      "passed": true,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M026",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 34 लगा है?",
+      "expected": {
+        "section": "34"
+      },
+      "passed": true,
+      "top_hit_case_id": "14a5b3ee0d67dc8253a772623bdd8aa81b8d7d1c",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M027",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 379 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "379"
+      },
+      "passed": true,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M028",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 379 लगा है?",
+      "expected": {
+        "section": "379"
+      },
+      "passed": true,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M029",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 323 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "323"
+      },
+      "passed": true,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M030",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 323 लगा है?",
+      "expected": {
+        "section": "323"
+      },
+      "passed": true,
+      "top_hit_case_id": "fdc5c965774b92d32e6879b4747581d7a2a0b8c8",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M031",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 341 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "341"
+      },
+      "passed": true,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M032",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 341 लगा है?",
+      "expected": {
+        "section": "341"
+      },
+      "passed": true,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M033",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 504 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "504"
+      },
+      "passed": true,
+      "top_hit_case_id": "c12cc199b58c9b78e41eac1a97deb5f4d101786d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M034",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 504 लगा है?",
+      "expected": {
+        "section": "504"
+      },
+      "passed": true,
+      "top_hit_case_id": "003a923bc25f6bac5c2c8abd477df471087e2536",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M035",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 506 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "506"
+      },
+      "passed": false,
+      "top_hit_case_id": "6049d3fb59a78ade3cedf09d6da34543fe5e6cf2",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M036",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 506 लगा है?",
+      "expected": {
+        "section": "506"
+      },
+      "passed": false,
+      "top_hit_case_id": "0f920c7a3048b75d0b43151dd072003adffd49be",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M037",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 135 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "135"
+      },
+      "passed": false,
+      "top_hit_case_id": "de148db7ce89563a359c0993096186534d3aaacc",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M038",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 135 लगा है?",
+      "expected": {
+        "section": "135"
+      },
+      "passed": false,
+      "top_hit_case_id": "afb6e11bcae2def72e74a5ba22ed19fbc1628d01",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M039",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 137 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "137"
+      },
+      "passed": false,
+      "top_hit_case_id": "c644bf35cb82e61eb9b0293dfa2553e57ddce203",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M040",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 137 लगा है?",
+      "expected": {
+        "section": "137"
+      },
+      "passed": true,
+      "top_hit_case_id": "0f920c7a3048b75d0b43151dd072003adffd49be",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M041",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 4 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "4"
+      },
+      "passed": true,
+      "top_hit_case_id": "c12cc199b58c9b78e41eac1a97deb5f4d101786d",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M042",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 4 लगा है?",
+      "expected": {
+        "section": "4"
+      },
+      "passed": true,
+      "top_hit_case_id": "003a923bc25f6bac5c2c8abd477df471087e2536",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M043",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 307 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "307"
+      },
+      "passed": true,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M044",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 307 लगा है?",
+      "expected": {
+        "section": "307"
+      },
+      "passed": true,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M045",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 325 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "325"
+      },
+      "passed": false,
+      "top_hit_case_id": "a27c04b39af37b4115f6850992adc49931ee3f17",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M046",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 325 लगा है?",
+      "expected": {
+        "section": "325"
+      },
+      "passed": false,
+      "top_hit_case_id": "003a923bc25f6bac5c2c8abd477df471087e2536",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M047",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 354 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "354"
+      },
+      "passed": false,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M048",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 354 लगा है?",
+      "expected": {
+        "section": "354"
+      },
+      "passed": false,
+      "top_hit_case_id": "fdc5c965774b92d32e6879b4747581d7a2a0b8c8",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M049",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "धारा 279 वाले FIR मामले दिखाओ।",
+      "expected": {
+        "section": "279"
+      },
+      "passed": true,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    },
+    {
+      "id": "M050",
+      "type": "semantic",
+      "intent": "section_filter",
+      "question": "किन केसों में सेक्शन 279 लगा है?",
+      "expected": {
+        "section": "279"
+      },
+      "passed": true,
+      "top_hit_case_id": "48ee0a6ac1a12ab83278c034d9124bb8274422bb",
+      "retrieved_count": 10
+    }
+  ]
+}
